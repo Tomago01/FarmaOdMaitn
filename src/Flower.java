@@ -39,6 +39,9 @@ public abstract class Flower {
     }
 
     public double getChanceOfGrowth() {
+        if(neededArea < 5){
+            chanceOfGrowth--;
+        }
         return chanceOfGrowth;
     }
 
