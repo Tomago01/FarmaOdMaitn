@@ -1,5 +1,6 @@
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Random;
 
 public abstract class Flower {
 
@@ -39,6 +40,8 @@ public abstract class Flower {
     }
 
     public double getChanceOfGrowth() {
+        Random r = new Random();
+        r.nextInt(5);
         if(neededArea < 5){
             chanceOfGrowth--;
         }
